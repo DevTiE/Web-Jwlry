@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Custom Design - Jewelry Shop</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -22,6 +23,25 @@
     <main>
         <h1>Custom Design Solutions</h1>
         <p>We offer custom design solutions to bring your unique jewelry ideas to life. Contact us to get started!</p>
+
+        <!-- Custom Design Button and Modal -->
+        <button class="custom-design-btn">Request Custom Design</button>
+        <div class="custom-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>Request a Custom Design</h2>
+                <p>Please fill out the form below to request a custom design:</p>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br><br>
+                    <label for="design-details">Design Details:</label><br>
+                    <textarea id="design-details" name="design-details"></textarea><br><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
     </main>
     <footer>
         <p>&copy; 2025 Jewelry Shop. All rights reserved.</p>
